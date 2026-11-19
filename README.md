@@ -60,6 +60,8 @@ cp codeigniter-steps/site/test_fixtures.php test/mysite/app/Views/test_fixtures.
 cat codeigniter-steps/site/routes.php >> test/mysite/app/Config/Routes.php
 ```
 
+With them, the features of [`tests/features/`](tests/features/) pass there as they pass on the script's app.
+
 **2. A test project.**
 
 ```bash

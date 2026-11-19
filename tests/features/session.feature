@@ -34,7 +34,10 @@ Feature: The session
 
   Scenario: A banned account is refused
     Given I am an anonymous user
-    When I log in with the email "banned@example.com" and the password "Account-Pass-2026!"
+    When I go to "/login"
+    And I fill in "Email Address" with the email of "banned"
+    And I fill in "Password" with the password of "banned"
+    And I click the "Login" button
     Then I should see the error message "Can not log you in as you are currently banned."
     And I should not be logged in
 
