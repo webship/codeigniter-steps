@@ -1,0 +1,64 @@
+{
+  "name": "@webship-js/codeigniter-steps",
+  "version": "2.0.0",
+  "description": "Cucumber step definitions for apps made from the official app starter with the official auth library, a plugin for webship-js (Playwright and Cucumber): the session and the login link through the mail, remembering a login, registration refusals, groups and permissions, error and success messages, the welcome page, the error pages, the CSRF refusal, and the debug toolbar and debug page checks.",
+  "main": "tests/step-definitions/codeigniter-session.steps.js",
+  "files": [
+    "tests/step-definitions/",
+    "tests/features/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "cucumber-js --config cucumber.js",
+    "test:dry": "cucumber-js --config cucumber.js --dry-run",
+    "test:examples": "node tests/check-examples.js",
+    "test:paths": "node tests/check-paths.js",
+    "test:must-fail": "node tests/check-must-fail.js",
+    "test:development": "CUCUMBER_TAGS=@development cucumber-js --config cucumber.js",
+    "test:chromium": "BROWSER=chromium cucumber-js --config cucumber.js",
+    "test:firefox": "BROWSER=firefox cucumber-js --config cucumber.js",
+    "test:webkit": "BROWSER=webkit cucumber-js --config cucumber.js",
+    "test:headed": "HEADLESS=false cucumber-js --config cucumber.js",
+    "generate-reports": "generate-reports"
+  },
+  "keywords": [
+    "webship-js",
+    "codeigniter",
+    "codeigniter4",
+    "shield",
+    "cucumber",
+    "cucumber-js",
+    "playwright",
+    "bdd",
+    "testing",
+    "e2e",
+    "gherkin"
+  ],
+  "author": "Webship.co",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webship/codeigniter-steps.git"
+  },
+  "bugs": {
+    "url": "https://github.com/webship/codeigniter-steps/issues"
+  },
+  "homepage": "https://github.com/webship/codeigniter-steps#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">= 20.0"
+  },
+  "peerDependencies": {
+    "webship-js": "^2.0.16"
+  },
+  "devDependencies": {
+    "tsx": "^4.23.0",
+    "webship-js": "^2.0.16"
+  },
+  "overrides": {
+    "@cucumber/cucumber": "^12"
+  }
+}
