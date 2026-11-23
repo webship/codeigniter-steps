@@ -31,7 +31,7 @@ that must fail and the development lane; see
 
 ## From nothing to a green run
 
-What the machine needs: Docker, [DDEV](https://ddev.com), git, python3, and Node.js 20 or later with npm. PHP, Composer and the database run in DDEV's containers.
+What the machine needs: Docker, [DDEV](https://ddev.com), git, python3, and Node.js 24 or later with npm. PHP, Composer and the database run in DDEV's containers.
 
 **1. The app.** The pack's own build script (the one CI runs) makes a new app in a DDEV project (type `php`, docroot `public`) with Composer: the app starter (`composer create-project codeigniter4/appstarter`), then the auth library (`composer require codeigniter4/shield` and its own `spark shield:setup`). It turns on CSRF protection for every form, adds four pages (see [A test app](#a-test-app)), creates the accounts of [Test users](#test-users), and runs the app as a live app runs (`CI_ENVIRONMENT = production`). It takes about a minute.
 
@@ -155,7 +155,7 @@ Not tested: completing a registration (the suite never creates an account), the 
 
 ## Requirements
 
-- Node.js 20 or later
+- Node.js 24 or later
 - A webship-js 2.0 test project (webship-js 2.0.16 or later)
 - An app made from the official app starter with the official auth library, and accounts on it for the suite
 
