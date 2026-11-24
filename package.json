@@ -1,6 +1,6 @@
 {
   "name": "@webship-js/codeigniter-steps",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Cucumber step definitions for apps made from the official app starter with the official auth library, a plugin for webship-js (Playwright and Cucumber): the session and the login link through the mail, remembering a login, registration refusals, groups and permissions, error and success messages, the welcome page, the error pages, the CSRF refusal, and the debug toolbar and debug page checks.",
   "main": "tests/step-definitions/codeigniter-session.steps.js",
   "files": [
